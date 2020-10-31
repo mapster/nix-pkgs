@@ -4,13 +4,13 @@ let
 in
 stdenv.mkDerivation rec {
   pname = "yubikey-oath-dmenu";
-  version = "0.11.0";
+  version = "0.12.0-rc1";
 
   src = fetchFromGitHub {
     owner = "emlun";
     repo = "yubikey-oath-dmenu";
-    rev = "v0.11.0";
-    sha256 = "0mpapmz7arn8wja29zsm7pfj4san805g1zfw3bwkg69lnx7lgiwg";
+    rev = "fbaf6050e82bca4773a5043d4adb71d41bb1a220";
+    sha256 = "0rr3hg9q7rbfvb082n1iwrnq7gfbwgac8wf4zf9xfvi24w9sx151";
   };
   
   buildInputs = [ makeWrapper ];
