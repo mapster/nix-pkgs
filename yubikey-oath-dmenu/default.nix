@@ -2,7 +2,7 @@
 let
   runtimePath = stdenv.lib.makeBinPath [ xclip dmenu ];
 in
-stdenv.mkDerivation {
+stdenv.mkDerivation rec {
   pname = "yubikey-oath-dmenu";
   version = "0.11.0";
 
@@ -22,10 +22,10 @@ stdenv.mkDerivation {
     done
   '';
 
-  meta = with stdenv.lib; {
+  meta = {
     description = "Yubikey OATH using dmenu";
     inherit (src.meta) homepage;
-    license = licenses.gpl3Only;
+    license = stdenv.lib.licenses.gpl3Only;
     maintainers = [ ourMaintainers.mapster ];
   };
 
