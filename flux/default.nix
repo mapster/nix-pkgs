@@ -2,16 +2,16 @@
 
 buildGoModule rec {
   pname = "flux";
-  version = "0.2.1";
+  version = "0.3.0";
 
   src = fetchFromGitHub {
     owner = "fluxcd";
     repo = "flux2";
-    rev = "v0.2.1";
-    sha256 = "0wfndpca91m9s3j79zb1rd4dqhy964paqlbryi4lwj10lxy71qlh";
+    rev = "v0.3.0";
+    sha256 = "0hcxcfbkiaq06g0z5fkp0g91xl37gj5hf7ccn34zz62vij62cl5n";
   };
   
-  vendorSha256 = "1vvy2cblwjrxhxkbkhr8ry70nxi525zks7avjji3vph0r5fbivzx";
+  vendorSha256 = "13x3bdb5nj2nii9gdr0kkp74xfg8papmlm5621y4j4nn1jkjkcaf";
   subPackages = [ "cmd/flux" ];
   nativeBuildInputs = [ installShellFiles ];
 
