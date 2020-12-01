@@ -8,10 +8,10 @@ buildGoModule rec {
     owner = "fluxcd";
     repo = "flux2";
     rev = "v0.4.2";
-    sha256 = "0djb1kwh16am4dvrfz0h8r9sa5r31bb96189lph7vjgqybj783xy";
+    sha256 = "14ni05sgw54fi4rgcy6ik5fqs9zg2bc73zkgmdmg5m54wc7mqbyd";
   };
   
-  vendorSha256 = "11s7h0sp1g0p15lwpfklk1i7yv78bigazhj447rmjgpmn9i8930d";
+  vendorSha256 = "15r4lwfq8x8ayw3fa2pjbpk251abnz8s341zq7ka3w2grn6j5lxj";
   subPackages = [ "cmd/flux" ];
   nativeBuildInputs = [ installShellFiles ];
 
