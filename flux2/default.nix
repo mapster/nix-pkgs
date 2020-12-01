@@ -1,7 +1,7 @@
 { stdenv, fetchFromGitHub, ourMaintainers, buildGoModule, installShellFiles }:
 
 buildGoModule rec {
-  pname = "flux";
+  pname = "flux2";
   version = "0.4.2";
 
   src = fetchFromGitHub {
